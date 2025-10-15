@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Harry Parker — Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="blob a" aria-hidden="true"></div>
+  <div class="blob b" aria-hidden="true"></div>
+
+  <nav class="nav">
+    <div class="brand">
+      <div class="logo">HP</div>
+      <div>
+        <h1>Harry Parker</h1>
+        <div class="tagline">Software Engineer</div>
+      </div>
+    </div>
+    <div class="nav-links">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact" class="cta">Contact</a>
+    </div>
+    <button class="burger" aria-label="Open menu" onclick="toggleMenu()">☰</button>
+  </nav>
+
+  <header class="hero" id="home">
+    <span class="eyebrow">👋 Welcome</span>
+    <h2>I'm <span class="accent">Harry</span>, a passionate developer<br/> focused on automation & modern web tools.</h2>
+    <p class="lead">I build smart Python & web solutions that automate workflows and save companies time — with clean, beautiful UI.</p>
+    <div class="actions">
+      <button class="btn" onclick="scrollToSection('projects')">View Projects</button>
+      <button class="btn btn-ghost" onclick="scrollToSection('contact')">Contact Me</button>
+    </div>
+  </header>
+
+  <section class="section" id="about">
+    <h3>About Me</h3>
+    <p class="lead">I’m a UK-based software engineer experienced in <strong>Python automation, web scraping, and full-stack tools</strong>. I love crafting solutions that drive efficiency and empower small teams.</p>
+    <div class="skills">
+      <div class="skill">Python</div>
+      <div class="skill">JavaScript</div>
+      <div class="skill">React JS</div>
+      <div class="skill">SQL</div>
+      <div class="skill">Flask</div>
+      <div class="skill">HTML</div>
+      <div class="skill">CSS</div>
+      <div class="skill">Node JS</div>
+    </div>
+  </section>
+
+  <section class="section" id="projects">
+    <h3>Projects</h3>
+    <div class="features">
+      <article class="feature">
+        <h4>Auto DBS</h4>
+        <p class="small">Automated background check processing system saving hours of admin work per week.</p>
+      </article>
+      <article class="feature">
+        <h4>Auto Post Solution</h4>
+        <p class="small">A posting automation tool built in Python to sync data and handle compliance workflows.</p>
+      </article>
+      <article class="feature">
+        <h4>Vision Tool AI</h4>
+        <p class="small"> An AI-powered image recognition app that identifies dishes and gives instant recipes to recreate them at home.</p>
+      </article>
+      </article>
+      <article class="feature">
+        <h4>Dyno AI</h4>
+        <p class="small">An intelligent web tool prototype exploring AI-driven process recommendations.</p>
+      </article>
+    </div>
+  </section>
+
+  <section class="section" id="gallery">
+    <h3>Gallery</h3>
+    <div class="gallery">
+      <div class="thumb">Dashboard</div>
+      <div class="thumb">Analytics</div>
+      <div class="thumb">Landing Page</div>
+    </div>
+  </section>
+
+  <section class="section contact" id="contact">
+    <h3>Get in Touch</h3>
+    <p class="lead">Interested in working together or want to discuss an idea? Let’s connect.</p>
+    <form onsubmit="event.preventDefault(); alert('Thanks, I’ll reply soon!');">
+      <input type="email" placeholder="Your Email" required />
+      <textarea placeholder="Your Message" required></textarea>
+      <button class="btn" type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <footer>
+    <div>© 2025 Harry — Built with ❤️ </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
