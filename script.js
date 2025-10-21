@@ -1,3 +1,22 @@
+// Load the gtag.js script
+(function() {
+  const script = document.createElement('script');
+  script.async = true;
+  script.src = 'https://www.googletagmanager.com/gtag/js?id=G-23L9KW6WT0';
+  document.head.appendChild(script);
+})();
+
+// Initialize dataLayer and gtag function
+window.dataLayer = window.dataLayer || [];
+function gtag() {
+  dataLayer.push(arguments);
+}
+
+// Configure Google Analytics
+gtag('js', new Date());
+gtag('config', 'G-23L9KW6WT0');
+
+
 function toggleMenu(){
   const links=document.querySelector('.nav-links');
   if(getComputedStyle(links).display==='none'){
